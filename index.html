@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Coding Competition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <!-- Replace with loader.mp4 video -->
+    <video src="assets/loader.mp4" autoplay muted loop></video>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display:none;">
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="logo">VibeComp</div>
+      <button id="hamburger" aria-label="Open navigation menu" tabindex="0">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="mode-toggle" aria-label="Toggle light/dark mode">🌙</button>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay animated-gradient"></div>
+      <div class="hero-content">
+        <h1 class="hero-title animated-headline">Welcome to <span class="highlight">VibeComp</span></h1>
+        <p class="hero-subtitle animated-sub">Experience the vibe. Explore the features. Enjoy the journey.</p>
+        <button class="cta-btn" aria-label="Explore Features">Explore Features</button>
+      </div>
+      <video src="assets/homepage.mp4" autoplay muted loop playsinline class="hero-video" aria-label="Hero background video"></video>
+      <div class="scroll-down-indicator" aria-label="Scroll Down">&#8595;</div>
+    </section>
+    <section id="features" data-reveal>
+      <h2>Features & Services</h2>
+      <div class="features-cards">
+        <div class="feature-card" data-reveal tabindex="0" aria-label="Fast Performance">
+          <video src="assets/features-services.mp4" autoplay muted loop aria-label="Features Overview"></video>
+          <h3>Fast Performance</h3>
+          <p>Our platform is optimized for speed, ensuring a seamless user experience across all devices.</p>
+        </div>
+        <div class="feature-card" data-reveal tabindex="0" aria-label="Modern Design">
+          <img src="assets/cards.png" alt="Feature Cards" class="lightbox-img" />
+          <h3>Modern Design</h3>
+          <p>Enjoy a clean, modern interface with beautiful visuals and intuitive navigation.</p>
+        </div>
+        <div class="feature-card" data-reveal tabindex="0" aria-label="Easy Customization">
+          <img src="assets/graph.png" alt="Customization Graph" class="lightbox-img" />
+          <h3>Easy Customization</h3>
+          <p>Personalize your experience with flexible options and easy-to-use settings.</p>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" data-reveal>
+      <h2>Showcase Gallery</h2>
+      <div class="gallery-videos">
+        <figure>
+          <video src="assets/showcase work.mp4" autoplay muted loop aria-label="Showcase Work"></video>
+          <figcaption>Showcase of our best work</figcaption>
+        </figure>
+        <figure>
+          <video src="assets/parallax animation.mp4" autoplay muted loop aria-label="Parallax Animation"></video>
+          <figcaption>Parallax animation effect</figcaption>
+        </figure>
+        <figure>
+          <video src="assets/caraousel switch.mp4" autoplay muted loop aria-label="Carousel Switch"></video>
+          <figcaption>Carousel switch demo</figcaption>
+        </figure>
+        <figure>
+          <video src="assets/ripple effect.mp4" autoplay muted loop aria-label="Ripple Effect"></video>
+          <figcaption>Ripple effect on interaction</figcaption>
+        </figure>
+        <figure>
+          <video src="assets/scroll and pop up.mp4" autoplay muted loop aria-label="Scroll and Pop Up"></video>
+          <figcaption>Scroll and pop-up animation</figcaption>
+        </figure>
+        <figure>
+          <video src="assets/striking - any simple object can be used.mp4" autoplay muted loop aria-label="Striking Animation"></video>
+          <figcaption>Striking animation with simple object</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="stats" data-reveal>
+      <h2>Stats & Graphs</h2>
+      <div class="stats-row">
+        <div class="stat-card" tabindex="0" aria-label="Users">
+          <span class="stat-number" data-count="1500">0</span>
+          <span class="stat-label">Users</span>
+        </div>
+        <div class="stat-card" tabindex="0" aria-label="Projects">
+          <span class="stat-number" data-count="120">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-card" tabindex="0" aria-label="Awards">
+          <span class="stat-number" data-count="24">0</span>
+          <span class="stat-label">Awards</span>
+        </div>
+      </div>
+      <div class="stats-images">
+        <img src="assets/stats.png" alt="Statistics" class="lightbox-img" />
+        <img src="assets/graph.png" alt="Performance Graph" class="lightbox-img" />
+      </div>
+    </section>
+    <section id="testimonials" data-reveal>
+      <h2>Testimonials</h2>
+      <div class="testimonial-carousel" aria-label="Testimonial Carousel">
+        <div class="testimonial-slide active">
+          <figure>
+            <div class="testimonial-video-wrapper">
+              <video src="testimonials.mp4" autoplay muted loop aria-label="Testimonial 1" tabindex="0"></video>
+              <div class="video-overlay play" aria-label="Play/Pause" tabindex="0"></div>
+            </div>
+            <figcaption>"This platform transformed our workflow!"<br><b>- Alex, Designer</b></figcaption>
+          </figure>
+        </div>
+        <div class="testimonial-slide">
+          <figure>
+            <div class="testimonial-video-wrapper">
+              <video src="assets/customer-section.mp4" autoplay muted loop aria-label="Testimonial 2" tabindex="0"></video>
+              <div class="video-overlay play" aria-label="Play/Pause" tabindex="0"></div>
+            </div>
+            <figcaption>"Amazing features and beautiful design."<br><b>- Priya, Developer</b></figcaption>
+          </figure>
+        </div>
+        <div class="testimonial-controls" aria-label="Testimonial Controls">
+          <button id="testimonial-prev" aria-label="Previous Testimonial">&#8592;</button>
+          <div id="testimonial-dots"></div>
+          <button id="testimonial-next" aria-label="Next Testimonial">&#8594;</button>
+        </div>
+      </div>
+    </section>
+    <section id="contact" data-reveal>
+      <h2>Contact</h2>
+      <form class="contact-form" aria-label="Contact Form" autocomplete="off">
+        <div class="input-group">
+          <span class="input-icon">&#128100;</span>
+          <input type="text" id="name" name="name" required placeholder="Your Name" />
+        </div>
+        <div class="input-group">
+          <span class="input-icon">&#9993;</span>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+        <div class="input-group">
+          <span class="input-icon">&#9998;</span>
+          <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+        </div>
+        <button type="submit" class="cta-btn" aria-label="Send Message">Send Message</button>
+      </form>
+      <div id="contact-success" class="contact-success" style="display:none;">Thank you! Your message has been sent.</div>
+    </section>
+    <button id="backToTop" aria-label="Back to Top">↑</button>
+    <footer>
+      <p>Made for Vibe Coding Competition | <span id="ai-tools">AI tools used: ChatGPT-4</span></p>
+    </footer>
+  </div>
+  <div id="image-modal" class="modal" style="display:none;">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Large preview" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
