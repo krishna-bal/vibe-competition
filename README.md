@@ -1,9 +1,7 @@
-ECHO is on.
-
 # Vibe Coding Competition Submission
 
 ## Live Demo
-[Add your deployed URL here]
+(https://vibe-competition.netlify.app/)
 
 ## Features
 - Responsive design
